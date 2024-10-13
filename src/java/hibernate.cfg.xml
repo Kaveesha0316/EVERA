@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/evana_db?useSSL=false</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">kaveesha0316#</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <mapping class="entity.User"/>
+        <mapping class="entity.mainCategory"/>
+        <mapping class="entity.subCategory"/>
+        <mapping class="entity.Sizes"/>
+        <mapping class="entity.brand"/>
+        <mapping class="entity.productStatus"/>
+        <mapping class="entity.Product"/>
+         <mapping class="entity.Cart"/>
+         <mapping class="entity.City"/>
+         <mapping class="entity.Address"/>
+          <mapping class="entity.Order_status"/>
+           <mapping class="entity.Orders"/>
+           <mapping class="entity.Order_item"/>
+           <mapping class="entity.Wishlist"/>
+    </session-factory>
+</hibernate-configuration>
